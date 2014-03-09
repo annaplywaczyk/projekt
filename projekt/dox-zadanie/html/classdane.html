@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PAMSI-lab2: Dokumentacja klasy dane</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PAMSI-lab2
+   &#160;<span id="projectnumber">1.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;g≈Ç√≥wna</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Sk≈Çadowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classdane-members.html">Lista wszystkich sk≈Çadowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy dane</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Modeluje pojecie danych, uøytych w programie, ktÛre w moim przypadku sa wektorem, ktory zostaje wczytany z pliku. Pierwsza zmienna wczytana z pliku jest liczba elemntow wystepujacych w tym pliku. Przyjelam, ze zmienne wczytane z pliku sa liczbami calkowitymi (int).  
+</p>
+
+<p><code>#include &lt;<a class="el" href="dane_8hh_source.html">dane.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a9d11db4780438d62db6e12060c2c84f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a9d11db4780438d62db6e12060c2c84f0">wczytaj</a> (string nazwa)</td></tr>
+<tr class="memdesc:a9d11db4780438d62db6e12060c2c84f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wczytujπca dane do wektora z pliku. Funkcja otwiera plik zdefiniowany w glownej funkcji przez uøytkownika, sprawdza czy plik zosta≥ otwarty, jeøeli zosta≥ otwarty wczytana jest liczba elementow pliku, nastepnie wczytywane sa wszystkie liczby do wektora.  <a href="#a9d11db4780438d62db6e12060c2c84f0"></a><br/></td></tr>
+<tr class="memitem:a8c2265d257e8915ab0927da72d1eda59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a8c2265d257e8915ab0927da72d1eda59">wypisz</a> ()</td></tr>
+<tr class="memdesc:a8c2265d257e8915ab0927da72d1eda59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypisujπca na ekran wszystkie elementy wektora. Funkcja wypisuje na ekran wsyztskie elemnty z pliku na ekran w postaci wektora w kolumnie.  <a href="#a8c2265d257e8915ab0927da72d1eda59"></a><br/></td></tr>
+<tr class="memitem:a3e9a764d9affa78d3f6b01d77996d3ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a3e9a764d9affa78d3f6b01d77996d3ec">zamien_element</a> (int i, int j)</td></tr>
+<tr class="memdesc:a3e9a764d9affa78d3f6b01d77996d3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamiana elementow Funkcja zamiania dwa elementy wektora, zadane poprzez wywolanie argumentow funkcji.  <a href="#a3e9a764d9affa78d3f6b01d77996d3ec"></a><br/></td></tr>
+<tr class="memitem:a1bd757a9b99595578ca23f52ea036f20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a1bd757a9b99595578ca23f52ea036f20">dodaj_element</a> (int e)</td></tr>
+<tr class="memdesc:a1bd757a9b99595578ca23f52ea036f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodawanie elementu. Funkcja dodaje element na koniec wektora. Funkcja zdefiniowana jest poprzez wywolanie argumentow funkcji.  <a href="#a1bd757a9b99595578ca23f52ea036f20"></a><br/></td></tr>
+<tr class="memitem:a707fcfe2661ea4c59e4c9be456fc96d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a707fcfe2661ea4c59e4c9be456fc96d7">odwroc_element</a> ()</td></tr>
+<tr class="memdesc:a707fcfe2661ea4c59e4c9be456fc96d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odwracanie elementow Funkcja ogawraca wektor, ostatni element wektora staje siÍ pierwszy, a pierwszy ostatnim  (brak)  <a href="#a707fcfe2661ea4c59e4c9be456fc96d7"></a><br/></td></tr>
+<tr class="memitem:a257a2d91e163464fe7fb8c1a7adb1728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a257a2d91e163464fe7fb8c1a7adb1728">dodaj_elementy</a> (<a class="el" href="classdane.html">dane</a> wektor2)</td></tr>
+<tr class="memdesc:a257a2d91e163464fe7fb8c1a7adb1728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodawanie elementu. Funkcja dodaje element na koniec wektora. Funkcja zdefiniowana jest poprzez wywolanie argumentow funkcji.  <a href="#a257a2d91e163464fe7fb8c1a7adb1728"></a><br/></td></tr>
+<tr class="memitem:af5f6aad7a57c9709cfdd50bc57c9ecb3"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#af5f6aad7a57c9709cfdd50bc57c9ecb3">operator[]</a> (int indeks)</td></tr>
+<tr class="memdesc:af5f6aad7a57c9709cfdd50bc57c9ecb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uzycie operatora [] Przeciazenie operatora stwoarzone abysmy mogli odwolac sie do konkretnego elementu wektora.  <a href="#af5f6aad7a57c9709cfdd50bc57c9ecb3"></a><br/></td></tr>
+<tr class="memitem:aad79f522f96d20e05e7e84db96dfe162"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#aad79f522f96d20e05e7e84db96dfe162">size</a> ()</td></tr>
+<tr class="memdesc:aad79f522f96d20e05e7e84db96dfe162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozmiar wektora.  <a href="#aad79f522f96d20e05e7e84db96dfe162"></a><br/></td></tr>
+<tr class="memitem:a0316457927e41afa079b84ed878c7462"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdane.html">dane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a0316457927e41afa079b84ed878c7462">operator+</a> (<a class="el" href="classdane.html">dane</a> wektor2)</td></tr>
+<tr class="memdesc:a0316457927e41afa079b84ed878c7462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uzycie operatora + na wektorze Przeciazenie operatora dodwania, ktory mozemy wykonywac na wektorach.  <a href="#a0316457927e41afa079b84ed878c7462"></a><br/></td></tr>
+<tr class="memitem:a2b3162017b009396e52273f80b1e43a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdane.html">dane</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a2b3162017b009396e52273f80b1e43a2">operator=</a> (<a class="el" href="classdane.html">dane</a> wektor2)</td></tr>
+<tr class="memdesc:a2b3162017b009396e52273f80b1e43a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uzycie operatora = na wektorze Przeciazenie opertora przypisywania.  <a href="#a2b3162017b009396e52273f80b1e43a2"></a><br/></td></tr>
+<tr class="memitem:adc96a79286edf951110bcb1206214912"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#adc96a79286edf951110bcb1206214912">wnetrze</a> ()</td></tr>
+<tr class="memdesc:adc96a79286edf951110bcb1206214912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda dajπca dostep do zawartosci wektora danych.  <a href="#adc96a79286edf951110bcb1206214912"></a><br/></td></tr>
+<tr class="memitem:a0024956f16e82184d7da0650d4a3372a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a0024956f16e82184d7da0650d4a3372a">operator==</a> (<a class="el" href="classdane.html">dane</a> wektor2)</td></tr>
+<tr class="memdesc:a0024956f16e82184d7da0650d4a3372a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator porownania dwoch wektorow Funkcja, ktora jest operatorem porownania dwoch wektorow.  <a href="#a0024956f16e82184d7da0650d4a3372a"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a7f047a5aae9ed36ad4fd2a26e4907396"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a7f047a5aae9ed36ad4fd2a26e4907396">liczba_el</a></td></tr>
+<tr class="memdesc:a7f047a5aae9ed36ad4fd2a26e4907396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje liczbe elementow. Liczba elementow zostaje okreslona poprzez wczytanie z pliku pierwszej zmiennej i okresla ile zmiennych bedzie w wektorze,ktore wczytane zostana z pliku wystepujacych w pliku.  <a href="#a7f047a5aae9ed36ad4fd2a26e4907396"></a><br/></td></tr>
+<tr class="memitem:a7603de7229570aab866efba9241e2972"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdane.html#a7603de7229570aab866efba9241e2972">wektor</a></td></tr>
+<tr class="memdesc:a7603de7229570aab866efba9241e2972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje wektor. Tworzy wektor, ktory zostanie wypelniony elemenatami znajdujacymi sie w pliku. W wektorze znajdowac sie beda zmienne, ktore beda liczbami calkowitymi.  <a href="#a7603de7229570aab866efba9241e2972"></a><br/></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Opis szczeg√≥≈Çowy</h2>
+<div class="textblock">
+<p>Definicja w linii <a class="el" href="dane_8hh_source.html#l00031">31</a> pliku <a class="el" href="dane_8hh_source.html">dane.hh</a>.</p>
+</div><h2>Dokumentacja funkcji sk≈Çadowych</h2>
+<a class="anchor" id="a1bd757a9b99595578ca23f52ea036f20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dane::dodaj_element </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>- liczba, ktora ma zostac dodana na koniec wektora. return (brak) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00049">49</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a257a2d91e163464fe7fb8c1a7adb1728"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dane::dodaj_elementy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdane.html">dane</a>&#160;</td>
+          <td class="paramname"><em>wektor2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wektor2</td><td>- wektor, ktory ma zostac dodany na koniec wektora, z dwoch zostaje stworzony jeden. return (brak) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00066">66</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywo≈Ça≈Ñ dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdane_a257a2d91e163464fe7fb8c1a7adb1728_cgraph.png" border="0" usemap="#classdane_a257a2d91e163464fe7fb8c1a7adb1728_cgraph" alt=""/></div>
+<map name="classdane_a257a2d91e163464fe7fb8c1a7adb1728_cgraph" id="classdane_a257a2d91e163464fe7fb8c1a7adb1728_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a707fcfe2661ea4c59e4c9be456fc96d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dane::odwroc_element </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00055">55</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0316457927e41afa079b84ed878c7462"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdane.html">dane</a> &amp; dane::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdane.html">dane</a>&#160;</td>
+          <td class="paramname"><em>wektor2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wektor2</td><td>- wektor danych ktory ma zostac dodany do wektora glownego </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca wektor, ktory jest suma dwoch innych </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00079">79</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b3162017b009396e52273f80b1e43a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdane.html">dane</a> &amp; dane::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdane.html">dane</a>&#160;</td>
+          <td class="paramname"><em>wektor2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wektor2</td><td>- wektor danych ktory ma zostac przypisany do wektora glownego </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca wektor, do ktorego zostal przypisany inny wektor </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00085">85</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywo≈Ça≈Ñ dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdane_a2b3162017b009396e52273f80b1e43a2_cgraph.png" border="0" usemap="#classdane_a2b3162017b009396e52273f80b1e43a2_cgraph" alt=""/></div>
+<map name="classdane_a2b3162017b009396e52273f80b1e43a2_cgraph" id="classdane_a2b3162017b009396e52273f80b1e43a2_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0024956f16e82184d7da0650d4a3372a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dane::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdane.html">dane</a>&#160;</td>
+          <td class="paramname"><em>wektor2</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wektor2</td><td>- wektor danych ktory zostaje porownany z danymi glownymi </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>True gdy wektory danych sa jednakowe, natomiast jesli nawet jeden element sie rozni od wektora porownywanego zwraca false. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00093">93</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywo≈Ça≈Ñ dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdane_a0024956f16e82184d7da0650d4a3372a_cgraph.png" border="0" usemap="#classdane_a0024956f16e82184d7da0650d4a3372a_cgraph" alt=""/></div>
+<map name="classdane_a0024956f16e82184d7da0650d4a3372a_cgraph" id="classdane_a0024956f16e82184d7da0650d4a3372a_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af5f6aad7a57c9709cfdd50bc57c9ecb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int &amp; dane::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indeks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">indeks</td><td>- zmienna calkowita, poperzez ktora mozemy dostac do konkretnego elementu wektora. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Zwraca wartosc jaka znajduje siÍ w zadanym elemencie wektora. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00074">74</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad79f522f96d20e05e7e84db96dfe162"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int dane::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>Funkcja zwaraca liczbe elementow wektora. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8hh_source.html#l00102">102</a> pliku <a class="el" href="dane_8hh_source.html">dane.hh</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywo≈Çywa≈Ñ tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdane_aad79f522f96d20e05e7e84db96dfe162_icgraph.png" border="0" usemap="#classdane_aad79f522f96d20e05e7e84db96dfe162_icgraph" alt=""/></div>
+<map name="classdane_aad79f522f96d20e05e7e84db96dfe162_icgraph" id="classdane_aad79f522f96d20e05e7e84db96dfe162_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d11db4780438d62db6e12060c2c84f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dane::wczytaj </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nazwa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa</td><td>- zmienna, ktÛra zostaje wprowadzona przez uøytkownika do programu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>(brak) </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00012">12</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc96a79286edf951110bcb1206214912"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int&gt;&amp; dane::wnetrze </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>Wektor danych. </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8hh_source.html#l00123">123</a> pliku <a class="el" href="dane_8hh_source.html">dane.hh</a>.</p>
+
+<p><div class="dynheader">
+Oto graf wywo≈Çywa≈Ñ tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdane_adc96a79286edf951110bcb1206214912_icgraph.png" border="0" usemap="#classdane_adc96a79286edf951110bcb1206214912_icgraph" alt=""/></div>
+<map name="classdane_adc96a79286edf951110bcb1206214912_icgraph" id="classdane_adc96a79286edf951110bcb1206214912_icgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c2265d257e8915ab0927da72d1eda59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dane::wypisz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Zwraca</dt><dd>(brak) </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00029">29</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e9a764d9affa78d3f6b01d77996d3ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dane::zamien_element </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>- pierwszy numer elementu, ktory ma zostac zamieniony. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">j-</td><td>drugi numer elementu, ktory ma zostac zamieniony. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>(brak) </dd></dl>
+
+<p>Definicja w linii <a class="el" href="dane_8cpp_source.html#l00037">37</a> pliku <a class="el" href="dane_8cpp_source.html">dane.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Dokumentacja atrybut√≥w sk≈Çadowych</h2>
+<a class="anchor" id="a7f047a5aae9ed36ad4fd2a26e4907396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dane::liczba_el</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="dane_8hh_source.html#l00038">38</a> pliku <a class="el" href="dane_8hh_source.html">dane.hh</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7603de7229570aab866efba9241e2972"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt;int&gt; dane::wektor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="dane_8hh_source.html#l00044">44</a> pliku <a class="el" href="dane_8hh_source.html">dane.hh</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy zosta≈Ça wygenerowana z plik√≥w:<ul>
+<li><a class="el" href="dane_8hh_source.html">dane.hh</a></li>
+<li><a class="el" href="dane_8cpp_source.html">dane.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 9 mar 2014 21:01:20 dla PAMSI-lab2 programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

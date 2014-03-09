@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PAMSI-lab2: Plik ≈∫r√≥d≈Çowy main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PAMSI-lab2
+   &#160;<span id="projectnumber">1.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;g≈Ç√≥wna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plik√≥w</span></a></li>
+      <li><a href="globals.html"><span>Sk≈Çadowe&#160;plik√≥w</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_13c5b1b01c16aef42a1238b9abcb8723.html">zadanie</a></li><li class="navelem"><a class="el" href="dir_97b80f7d07976ca84683aa575f196689.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Id≈∫ do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="uruchom_8hh.html" title="Definicja klasy zegar.">uruchom.hh</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ofstream plik(<span class="stringliteral">&quot;wnioski.csv&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classzegar.html" title="Klasa modeluje uruchomienia g≥ownych wlasciowosci programu. Atrybutem klasy sa stowrzone dwa elemnty k...">zegar</a> tablica;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=10; i&lt;1000; i=i*10)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="comment">// zdefiniowane zmienne oraz czesci nazw plikow, ktore sie zmieniac beda;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordtype">string</span> czesc_1 = <span class="stringliteral">&quot;dane&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordtype">string</span> czesc_1spr=<span class="stringliteral">&quot;spr&quot;</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordtype">int</span> liczba=i;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordtype">string</span> czesc_2=<span class="stringliteral">&quot;.txt&quot;</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordtype">string</span> nazwa_pliku1;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordtype">string</span> nazwa_pliku2;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">int</span> j;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordtype">int</span> suma=0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="comment">// konwersja int na string aby nazwa programu mogla sie zmieniac samoczynnie;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                ostringstream numer;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                numer &lt;&lt; liczba;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <span class="keywordtype">string</span> element=numer.str();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="comment">//tworzone nazwy plikow</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                nazwa_pliku1=czesc_1+element+czesc_2;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                nazwa_pliku2=czesc_1spr+element+czesc_2;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="comment">//petla for w ktorej wykonywana jest liczba powtorzen danego algorytmu</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">for</span>(j=0;j&lt;50;j++)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        <span class="comment">// stworzone zmienne, ktore uzyte sa wylacznie w funkcji</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        LARGE_INTEGER start;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        LARGE_INTEGER end;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="keywordtype">double</span> czas=0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        <span class="comment">//funkcje wywolujaca glowna czesc programu - obliczanie czasu wykonywania algorytmu</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        start=tablica.<a class="code" href="classzegar.html#aeea0981af9bbff5af057ca2462d2f574" title="Funkcja zapamietujπca czas poczatkowy. Funkcja naleøπca do biblioteki &quot;windows.h&quot;, stoper zostaje w≥πczo...">wlaczStoper</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        tablica.<a class="code" href="classzegar.html#a8975a0605f6d9a6c8556459ec429e1a4" title="Funkcja wykonujπca zadany algorytm na wektorze. Funkcja wykonuje zadany algorytm na wektorze wejsciowy...">algorytm</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        end=tablica.<a class="code" href="classzegar.html#af1d85ecece1c8e7c08f32a761f383b2c" title="Funkcja zapamietujπca czas koÒcowy. Funkcja naleøπca do biblioteki &quot;windows.h&quot;, stoper zostaje wy≥πczony...">wylaczStoper</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        czas = end.QuadPart - start.QuadPart;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        suma=suma+czas;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="comment">//stworzenie pliku i zapisanie do niego danych o testowanym pliku</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                tablica.<a class="code" href="classzegar.html#ab62a10bb1731935c342405ce39580b66" title="Funkcja porÛwnujπca dwa wektory. Funkcja porÛwnuje dwa wektory, sprawdza czy wszystkie elemnty sπ ze sobπ rÛwne...">porownaj</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                plik &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; j &lt;&lt;<span class="stringliteral">&quot;,&quot;</span> &lt;&lt;suma/j &lt;&lt; endl;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                plik.flush();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        plik.close();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 9 mar 2014 21:01:20 dla PAMSI-lab2 programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>
