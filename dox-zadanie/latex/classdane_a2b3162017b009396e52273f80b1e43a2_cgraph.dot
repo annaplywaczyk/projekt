@@ -1,0 +1,11 @@
+digraph "dane::operator="
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dane::operator=",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="dane::wnetrze",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdane.html#adc96a79286edf951110bcb1206214912",tooltip="Metoda daj¹ca dostep do zawartosci wektora danych."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="dane::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdane.html#aad79f522f96d20e05e7e84db96dfe162",tooltip="Rozmiar wektora."];
+}

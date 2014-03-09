@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>PAMSI-lab2: Plik ≈∫r√≥d≈Çowy dane.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">PAMSI-lab2
+   &#160;<span id="projectnumber">1.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;g≈Ç√≥wna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plik√≥w</span></a></li>
+      <li><a href="globals.html"><span>Sk≈Çadowe&#160;plik√≥w</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_13c5b1b01c16aef42a1238b9abcb8723.html">zadanie</a></li><li class="navelem"><a class="el" href="dir_97b80f7d07976ca84683aa575f196689.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">dane.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dane_8cpp.html">Id≈∫ do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * dane.cpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 8 mar 2014</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Ania</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dane_8hh.html" title="Definicja klasy dane.">dane.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="classdane.html#a9d11db4780438d62db6e12060c2c84f0">   12</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdane.html#a9d11db4780438d62db6e12060c2c84f0" title="Funkcja wczytujπca dane do wektora z pliku. Funkcja otwiera plik zdefiniowany w glownej funkcji przez ...">dane::wczytaj</a>(<span class="keywordtype">string</span> nazwa)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        ifstream plik(nazwa.c_str());</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">int</span> liczba_elementow;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">if</span> (!plik)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                cerr &lt;&lt; <span class="stringliteral">&quot;Brak pliku!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        plik &gt;&gt; liczba_elementow;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">int</span> liczba;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=1; plik &gt;&gt; liczba; i++)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                wektor.push_back(liczba);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        plik.close();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="classdane.html#a8c2265d257e8915ab0927da72d1eda59">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdane.html#a8c2265d257e8915ab0927da72d1eda59" title="Funkcja wypisujπca na ekran wszystkie elementy wektora. Funkcja wypisuje na ekran wsyztskie elemnty z ...">dane::wypisz</a>()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;wektor.size(); i++)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                cout &lt;&lt;<span class="stringliteral">&quot;W[&quot;</span>&lt;&lt;i&lt;&lt;<span class="stringliteral">&quot;]: &quot;</span>&lt;&lt; wektor[i]&lt;&lt; endl;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classdane.html#a3e9a764d9affa78d3f6b01d77996d3ec">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdane.html#a3e9a764d9affa78d3f6b01d77996d3ec" title="Zamiana elementow Funkcja zamiania dwa elementy wektora, zadane poprzez wywolanie argumentow funkcji...">dane::zamien_element</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(i&gt;=liczba_el || j&gt;=liczba_el) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                cerr &lt;&lt;<span class="stringliteral">&quot;B≥πd, wektor nie ma tylu elementow&quot;</span> &lt;&lt;endl;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordtype">int</span> nowy=wektor[i];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                wektor[i]=wektor[j];</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                wektor[j]=nowy;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classdane.html#a1bd757a9b99595578ca23f52ea036f20">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdane.html#a1bd757a9b99595578ca23f52ea036f20" title="Dodawanie elementu. Funkcja dodaje element na koniec wektora. Funkcja zdefiniowana jest poprzez wywol...">dane::dodaj_element</a>(<span class="keywordtype">int</span> e)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        wektor.push_back(e);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        liczba_el++;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classdane.html#a707fcfe2661ea4c59e4c9be456fc96d7">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdane.html#a707fcfe2661ea4c59e4c9be456fc96d7" title="Odwracanie elementow Funkcja ogawraca wektor, ostatni element wektora staje siÍ pierwszy, a pierwszy ostatnim  (brak)">dane::odwroc_element</a>()</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        vector&lt;int&gt;zamiana;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> kolejnosc = wektor.size();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;wektor.size(); i++)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                zamiana.push_back(wektor[kolejnosc-1-i]);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        wektor=zamiana;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classdane.html#a257a2d91e163464fe7fb8c1a7adb1728">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classdane.html#a257a2d91e163464fe7fb8c1a7adb1728" title="Dodawanie elementu. Funkcja dodaje element na koniec wektora. Funkcja zdefiniowana jest poprzez wywol...">dane::dodaj_elementy</a>(<a class="code" href="classdane.html" title="Modeluje pojecie danych, uøytych w programie, ktÛre w moim przypadku sa wektorem, ktory zostaje wczytany ...">dane</a> wektor2)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;wektor2.<a class="code" href="classdane.html#aad79f522f96d20e05e7e84db96dfe162" title="Rozmiar wektora.">size</a>(); i++)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                wektor.push_back(wektor2[i]);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classdane.html#af5f6aad7a57c9709cfdd50bc57c9ecb3">   74</a></span>&#160;<span class="keywordtype">int</span> &amp; <a class="code" href="classdane.html#af5f6aad7a57c9709cfdd50bc57c9ecb3" title="Uzycie operatora [] Przeciazenie operatora stwoarzone abysmy mogli odwolac sie do konkretnego element...">dane::operator []</a>(<span class="keywordtype">int</span> indeks)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> wektor[indeks];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classdane.html#a0316457927e41afa079b84ed878c7462">   79</a></span>&#160;<a class="code" href="classdane.html" title="Modeluje pojecie danych, uøytych w programie, ktÛre w moim przypadku sa wektorem, ktory zostaje wczytany ...">dane</a> &amp; <a class="code" href="classdane.html#a0316457927e41afa079b84ed878c7462" title="Uzycie operatora + na wektorze Przeciazenie operatora dodwania, ktory mozemy wykonywac na wektorach...">dane::operator + </a>(<a class="code" href="classdane.html" title="Modeluje pojecie danych, uøytych w programie, ktÛre w moim przypadku sa wektorem, ktory zostaje wczytany ...">dane</a> wektor2)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        dodaj_elementy(wektor2);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="classdane.html#a2b3162017b009396e52273f80b1e43a2">   85</a></span>&#160;<a class="code" href="classdane.html" title="Modeluje pojecie danych, uøytych w programie, ktÛre w moim przypadku sa wektorem, ktory zostaje wczytany ...">dane</a> &amp; <a class="code" href="classdane.html#a2b3162017b009396e52273f80b1e43a2" title="Uzycie operatora = na wektorze Przeciazenie opertora przypisywania.">dane::operator = </a>(<a class="code" href="classdane.html" title="Modeluje pojecie danych, uøytych w programie, ktÛre w moim przypadku sa wektorem, ktory zostaje wczytany ...">dane</a> wektor2)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        wektor=wektor2.<a class="code" href="classdane.html#adc96a79286edf951110bcb1206214912" title="Metoda dajπca dostep do zawartosci wektora danych.">wnetrze</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        liczba_el=wektor2.<a class="code" href="classdane.html#aad79f522f96d20e05e7e84db96dfe162" title="Rozmiar wektora.">size</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="classdane.html#a0024956f16e82184d7da0650d4a3372a">   93</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classdane.html#a0024956f16e82184d7da0650d4a3372a" title="Operator porownania dwoch wektorow Funkcja, ktora jest operatorem porownania dwoch wektorow...">dane::operator == </a>(<a class="code" href="classdane.html" title="Modeluje pojecie danych, uøytych w programie, ktÛre w moim przypadku sa wektorem, ktory zostaje wczytany ...">dane</a> wektor2)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span>(wektor.size()==wektor2.<a class="code" href="classdane.html#aad79f522f96d20e05e7e84db96dfe162" title="Rozmiar wektora.">size</a>())</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;wektor.size(); i++)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <span class="keywordflow">if</span>(wektor[i]!=wektor2[i])</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 9 mar 2014 21:01:20 dla PAMSI-lab2 programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

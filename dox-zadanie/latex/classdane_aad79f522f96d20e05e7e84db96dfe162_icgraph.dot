@@ -1,0 +1,13 @@
+digraph "dane::size"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dane::size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="dane::dodaj_elementy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdane.html#a257a2d91e163464fe7fb8c1a7adb1728",tooltip="Dodawanie elementu. Funkcja dodaje element na koniec wektora. Funkcja zdefiniowana jest poprzez wywol..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="dane::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdane.html#a2b3162017b009396e52273f80b1e43a2",tooltip="Uzycie operatora = na wektorze Przeciazenie opertora przypisywania."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="dane::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdane.html#a0024956f16e82184d7da0650d4a3372a",tooltip="Operator porownania dwoch wektorow Funkcja, ktora jest operatorem porownania dwoch wektorow..."];
+}

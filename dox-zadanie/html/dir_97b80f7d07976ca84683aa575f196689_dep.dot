@@ -1,0 +1,11 @@
+digraph "C:/Users/Ania/workspace/zadanie/src/" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_13c5b1b01c16aef42a1238b9abcb8723 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="zadanie" fontname="Helvetica", fontsize="10", URL="dir_13c5b1b01c16aef42a1238b9abcb8723.html"]
+  dir_97b80f7d07976ca84683aa575f196689 [shape=box, label="src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_97b80f7d07976ca84683aa575f196689.html"];
+  }
+  dir_a196cc08bd03509cd123a686b88f62dc [shape=box label="inc" URL="dir_a196cc08bd03509cd123a686b88f62dc.html"];
+  dir_97b80f7d07976ca84683aa575f196689->dir_a196cc08bd03509cd123a686b88f62dc [headlabel="3", labeldistance=1.5 headhref="dir_000001_000002.html"];
+}
